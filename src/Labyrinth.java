@@ -1,8 +1,5 @@
 package Labyrinth;
 import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner; 
 public class Labyrinth {
 	public static void main(String[] args){
 		new Labyrinth();

@@ -1,26 +1,22 @@
 package Labyrinth;
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner; 
-
+import java.io.*;
+import java.util.*; 
 import javax.swing.ImageIcon;
-public class LabyrinthMap throws FileNotFoundException {
+public class LabyrinthMap{
 	private Scanner m;
 	private String map[] = new String[14];
-	private Image player,empty,wall,start,goal;
-	private File LabMap = new File("C://Labyrinth of Algorithms//Lab.txt");
-	public LabyrinthMap()
+	private Image empty,wall,start,goal;
+	private File LabMap = new File("Lab.txt");
+	public LabyrinthMap() 
 	{
-		ImageIcon tile = new ImageIcon("C://Labyrinth of Algorithms//Labyrinth of Algorithms Tile Assets/EmptyTile.png");
+		ImageIcon tile = new ImageIcon("EmptyTile.png");
 		empty = tile.getImage();
-		tile = new ImageIcon("C://Labyrinth of Algorithms//Labyrinth of Algorithms Tile Assets/PlayerTile.png");
-		player = tile.getImage();
-		tile = new ImageIcon("C://Labyrinth of Algorithms//Labyrinth of Algorithms Tile Assets/WallTile.png");
+		tile = new ImageIcon("WallTile.png");
 		wall = tile.getImage();
-		tile = new ImageIcon("C://Labyrinth of Algorithms//Labyrinth of Algorithms Tile Assets/StartTile.png");
+		tile = new ImageIcon("StartTile.png");
 		start = tile.getImage();
-		tile = new ImageIcon("C://Labyrinth of Algorithms//Labyrinth of Algorithms Tile Assets/GoalTile.png");
+		tile = new ImageIcon("GoalTile.png");
 		goal = tile.getImage();
 		openFile();
 		readFile();
@@ -29,10 +25,6 @@ public class LabyrinthMap throws FileNotFoundException {
 	public Image getEmpty()
 	{
 		return empty;
-	}
-	public Image getPlayer()
-	{
-		return player;
 	}
 	public Image getWall()
 	{
@@ -54,11 +46,11 @@ public class LabyrinthMap throws FileNotFoundException {
 	
 	public void openFile()
 	{
-		//try {
+		try {
 			m = new Scanner(LabMap);
-		//}catch (Exception e) {
-			//System.out.println("Labyrinth failed to load.");
-		//}
+		}catch (Exception e) {
+			System.out.println("Labyrinth failed to load.");
+		}
 	}
 	public void readFile()
 	{
