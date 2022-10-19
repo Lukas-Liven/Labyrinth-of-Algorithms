@@ -18,7 +18,23 @@ public class BoardVisual extends JPanel implements ActionListener {
 	
 	public void paint(Graphics g) {
 		super.paint(g);
-		g.setColor(Color.blue);
-		g.fillRect(0, 0, 3, 3);
+		for(int y=0; y<14; y++)
+		{
+			for(int x=0; x<14; x++)
+			{
+				if(l.ReadTile(x,y).equals("e")) {
+					g.drawImage(l.getEmpty(), x*32, y*32, null);
+				}
+				if(l.ReadTile(x,y).equals("w")) {
+					g.drawImage(l.getWall(), x*32, y*32, null);
+				}
+				if(l.ReadTile(x,y).equals("s")) {
+					g.drawImage(l.getStart(), x*32, y*32, null);
+				}
+				if(l.ReadTile(x,y).equals("g")) {
+					g.drawImage(l.getGoal(), x*32, y*32, null);
+				}
+			}
+		}
 	}
 }
