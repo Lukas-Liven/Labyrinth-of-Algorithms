@@ -9,7 +9,7 @@ public class Labyrinth {
 		JFrame Lab = new JFrame();
 		Lab.setTitle("Labyrinth of Algorithms Demo Map");
 		Lab.add(new BoardVisual());
-		Lab.setSize(560, 460);
+		Lab.setSize(462, 485);
 		Lab.setLocationRelativeTo(null);
 		Lab.setVisible(true);
 		Lab.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
