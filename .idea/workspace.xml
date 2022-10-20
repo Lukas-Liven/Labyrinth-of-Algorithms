@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5d6ab4d-3e28-4fe2-bda2-91dc27b603ae" name="Changes" comment="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java">
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/src/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/.project" beforeDir="false" afterPath="$PROJECT_DIR$/src/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/BoardVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Labyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/LabyrinthMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LabyrinthMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/Pointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/test/BoardVisualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardVisualTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/test/LabyrinthMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LabyrinthMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labyrinth/test/PointerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PointerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BoardVisualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardVisualTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +48,20 @@
       <recent name="Labyrinth" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PointerTest">
+  <component name="RunManager" selected="Application.Labyrinth (1)">
+    <configuration name="Labyrinth (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.Labyrinth" />
+      <module name="Labyrinth-of-Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Labyrinth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Labyrinth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Labyrinth.Labyrinth.Labyrinth" />
       <module name="Labyrinth-of-Algorithms" />
@@ -80,22 +86,6 @@
       <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
       <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LabyrinthMapTest.testOpenFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labyrinth-of-Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Labyrinth.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
-      <option name="METHOD_NAME" value="testOpenFile" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Labyrinth (1)" />
         <item itemvalue="JUnit.PointerTest" />
         <item itemvalue="JUnit.LabyrinthMapTest" />
         <item itemvalue="Application.Labyrinth" />
         <item itemvalue="JUnit.LabyrinthMapTest.testReadFile" />
-        <item itemvalue="JUnit.LabyrinthMapTest.testOpenFile" />
       </list>
     </recent_temporary>
   </component>
