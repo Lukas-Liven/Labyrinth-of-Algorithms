@@ -3,10 +3,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class BoardVisual extends JPanel implements ActionListener {
+
 	private Timer actionwait;
 	private int fps = (int) (1000/30);
 	private LabyrinthMap l;
 	private Pointer p;
+
 	public BoardVisual() {
 		l = new LabyrinthMap();
 		p = new Pointer();
@@ -19,6 +21,7 @@ public class BoardVisual extends JPanel implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		repaint();
 	}
+
 	public void paint(Graphics g) {
 		super.paint(g);
 		for(int y=0; y<14; y++)

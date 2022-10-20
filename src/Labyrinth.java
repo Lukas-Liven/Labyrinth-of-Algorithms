@@ -1,9 +1,7 @@
 package Labyrinth;
 import javax.swing.*;
 public class Labyrinth {
-	public static void main(String[] args){
-		new Labyrinth();
-	}
+	public static void main(String[] args){ new Labyrinth(); }
 	
 	public Labyrinth() {
 		JFrame Lab = new JFrame();

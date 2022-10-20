@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5d6ab4d-3e28-4fe2-bda2-91dc27b603ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.project" beforeDir="false" afterPath="$PROJECT_DIR$/bin/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/BoardVisual$Al.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/BoardVisual$Al.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/BoardVisual.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/BoardVisual.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/BoardVisualTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/BoardVisualTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Labyrinth.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Labyrinth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/LabyrinthMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/LabyrinthMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/LabyrinthMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/LabyrinthMapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/LabyrinthTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/LabyrinthTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Pointer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Pointer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/PointerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/PointerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardVisualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardVisualTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LabyrinthTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PointerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PointerTest.java" afterDir="false" />
+    <list default="true" id="d5d6ab4d-3e28-4fe2-bda2-91dc27b603ae" name="Changes" comment="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java">
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/src/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/.project" beforeDir="false" afterPath="$PROJECT_DIR$/src/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/BoardVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardVisual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Labyrinth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/LabyrinthMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LabyrinthMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/Pointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/test/BoardVisualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardVisualTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/test/LabyrinthMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LabyrinthMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Labyrinth/test/PointerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PointerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +40,78 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="JavaSE-16" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Labyrinth" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Labyrinth" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.PointerTest">
     <configuration name="Labyrinth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.Labyrinth" />
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.Labyrinth.Labyrinth" />
       <module name="Labyrinth-of-Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Labyrinth.*" />
+          <option name="PATTERN" value="Labyrinth.Labyrinth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LabyrinthMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labyrinth-of-Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Labyrinth.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LabyrinthMapTest.testOpenFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labyrinth-of-Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Labyrinth.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
+      <option name="METHOD_NAME" value="testOpenFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LabyrinthMapTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labyrinth-of-Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Labyrinth.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
+      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,61 +120,13 @@
       <module name="Labyrinth-of-Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Labyrinth.*" />
+          <option name="PATTERN" value="Labyrinth.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Labyrinth" />
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.PointerTest" />
+      <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.PointerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PointerTest.testGetPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labyrinth-of-Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Labyrinth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Labyrinth" />
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.PointerTest" />
-      <option name="METHOD_NAME" value="testGetPlayer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PointerTest.testGetXtile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labyrinth-of-Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Labyrinth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Labyrinth" />
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.PointerTest" />
-      <option name="METHOD_NAME" value="testGetXtile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PointerTest.testMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labyrinth-of-Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Labyrinth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Labyrinth" />
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.PointerTest" />
-      <option name="METHOD_NAME" value="testMove" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,10 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PointerTest" />
-        <item itemvalue="JUnit.PointerTest.testGetPlayer" />
-        <item itemvalue="JUnit.PointerTest.testMove" />
-        <item itemvalue="JUnit.PointerTest.testGetXtile" />
+        <item itemvalue="JUnit.LabyrinthMapTest" />
         <item itemvalue="Application.Labyrinth" />
+        <item itemvalue="JUnit.LabyrinthMapTest.testReadFile" />
+        <item itemvalue="JUnit.LabyrinthMapTest.testOpenFile" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +150,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666212736614</updated>
     </task>
+    <task id="LOCAL-00001" summary="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java">
+      <created>1666294611142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666294611142</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,12 +172,22 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$PointerTest.ic" NAME="PointerTest Coverage Results" MODIFIED="1666288039116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Labyrinth.*</FILTER>
+    <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$PointerTest.ic" NAME="PointerTest Coverage Results" MODIFIED="1666294310465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Labyrinth.Labyrinth.test.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$PointerTest_testMove.ic" NAME="PointerTest.testMove Coverage Results" MODIFIED="1666288007012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Labyrinth.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$Labyrinth.ic" NAME="Labyrinth Coverage Results" MODIFIED="1666294270293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Labyrinth.Labyrinth.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$LabyrinthMapTest.ic" NAME="LabyrinthMapTest Coverage Results" MODIFIED="1666294297641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Labyrinth.Labyrinth.test.*</FILTER>
     </SUITE>
   </component>
 </project>
