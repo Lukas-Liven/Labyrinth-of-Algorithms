@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d5d6ab4d-3e28-4fe2-bda2-91dc27b603ae" name="Changes" comment="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BoardVisualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardVisualTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Labyrinth-of-Algorithms/Labyrinth/test/BoardVisualTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BoardVisualTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +76,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoardVisualTest.testKeyPressed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labyrinth-of-Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Labyrinth.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Labyrinth.test" />
+      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.BoardVisualTest" />
+      <option name="METHOD_NAME" value="testKeyPressed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LabyrinthMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Labyrinth-of-Algorithms" />
       <extension name="coverage">
@@ -86,22 +103,6 @@
       <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
       <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LabyrinthMapTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labyrinth-of-Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Labyrinth.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Labyrinth.Labyrinth.test" />
-      <option name="MAIN_CLASS_NAME" value="Labyrinth.test.LabyrinthMapTest" />
-      <option name="METHOD_NAME" value="testReadFile" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,10 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Labyrinth (1)" />
+        <item itemvalue="JUnit.BoardVisualTest.testKeyPressed" />
         <item itemvalue="JUnit.PointerTest" />
         <item itemvalue="JUnit.LabyrinthMapTest" />
         <item itemvalue="Application.Labyrinth" />
-        <item itemvalue="JUnit.LabyrinthMapTest.testReadFile" />
       </list>
     </recent_temporary>
   </component>
@@ -167,17 +168,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Restructured project files, separating Labyrinth and respective JUnit files&#10;Added full coverage testing for LabyrinthMap.java in LabyrinthMapTest.java&#10;Made minor change for in-line return on Line 52 of LabyrinthMap.java" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/workspace_xml$LabyrinthMapTest.ic" NAME="LabyrinthMapTest Coverage Results" MODIFIED="1666298426844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Labyrinth.test.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$PointerTest.ic" NAME="PointerTest Coverage Results" MODIFIED="1666294310465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Labyrinth.Labyrinth.test.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$PointerTest_testMove.ic" NAME="PointerTest.testMove Coverage Results" MODIFIED="1666288007012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Labyrinth.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/workspace_xml$PointerTest.ic" NAME="PointerTest Coverage Results" MODIFIED="1666298449415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Labyrinth.test.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$Labyrinth.ic" NAME="Labyrinth Coverage Results" MODIFIED="1666294270293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Labyrinth.Labyrinth.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Labyrinth_of_Algorithms$LabyrinthMapTest.ic" NAME="LabyrinthMapTest Coverage Results" MODIFIED="1666294297641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Labyrinth.Labyrinth.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/workspace_xml$Labyrinth__1_.ic" NAME="Labyrinth (1) Coverage Results" MODIFIED="1666298592680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Labyrinth.*</FILTER>
     </SUITE>
   </component>
 </project>
