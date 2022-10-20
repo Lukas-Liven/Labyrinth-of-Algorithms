@@ -2,33 +2,47 @@ package Labyrinth;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import javax.swing.*;
+import java.awt.*;
 
 class PointerTest {
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+	@Test
+	public void testMove() {
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
+		Pointer s = new Pointer();
+		s.move(1, 1);
+		assertEquals(s.getXtile(), 1);
+		assertEquals(s.getYtile(), 1);
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
+		s.move(-2, -2);
+		assertEquals(s.getXtile(), -1);
+		assertEquals(s.getYtile(), -1);
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testGetXtile() {
+
+		Pointer s = new Pointer();
+		assertEquals(s.getXtile(), 0);
 	}
 
+	@Test
+	public void testGetYtile() {
+
+		Pointer s = new Pointer();
+		assertEquals(s.getYtile(), 0);
+	}
+
+	@Test
+	public void testGetPlayer() {
+
+		Pointer s = new Pointer();
+		ImageIcon tile = new ImageIcon("PlayerTile.png");
+		Image player = tile.getImage();
+
+		assertEquals(s.getPlayer(), player);
+	}
 }
